@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mava Transportes | Cotiza tu traslado de carga</title>
 <meta name="description" content="Transporte de carga de 1.700, 5.000 y 25.000 kg y traslados especiales. Atención 24 horas. Cotiza con Mava Transportes.">
-<!-- Favicon corporativo Mava Transportes en la pestaña del navegador -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121621'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23e31b2d' stroke-width='4'/%3E%3Cpath d='M12 32h40M32 10c6 6 6 38 0 44M32 10c-6 6-6 38 0 44' fill='none' stroke='%23e31b2d' stroke-width='2.5'/%3E%3Cpath d='M18 37h22v-9h-6l-4-5H18v14z' fill='%23ffffff'/%3E%3Ccircle cx='23' cy='39' r='3.5' fill='%23c9a45c'/%3E%3Ccircle cx='36' cy='39' r='3.5' fill='%23c9a45c'/%3E%3C/svg%3E">
+<link rel="icon" href="logo-mava.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -33,12 +32,11 @@ h3{font-size:1.2rem;font-weight:700;letter-spacing:-.005em;line-height:1.2}
 .wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
 .eyebrow{font:600 .78rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase}
 
-/* Logo Mava Transportes */
-.brand-logo{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none}
-.brand-logo svg{width:46px;height:46px;flex-shrink:0}
-.brand-text{display:flex;flex-direction:column;line-height:1}
-.brand-text strong{font:900 1.55rem/.95 var(--display);letter-spacing:.04em;color:#fff}
-.brand-text span{font:700 .72rem/1.2 var(--body);letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+/* Logos Mava Transportes */
+.header-logo{display:inline-flex;align-items:center;text-decoration:none}
+.header-logo img{height:46px;width:auto;max-width:220px;object-fit:contain;display:block}
+.footer-logo{display:inline-flex;align-items:center;text-decoration:none}
+.footer-logo img{height:50px;width:auto;max-width:230px;object-fit:contain;display:block}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:.75rem 1.5rem;border-radius:6px;background:var(--mark);color:#fff;font:600 1rem var(--body);text-decoration:none;border:2px solid var(--mark);cursor:pointer;transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-2px);background:#c5121f;border-color:#c5121f}
@@ -54,7 +52,7 @@ nav a:not(.btn):hover{color:var(--on-navy)}
 nav .btn{min-height:44px;padding:.5rem 1.1rem}
 @media(max-width:860px){nav a.hide{display:none}}
 
-/* Hero: la cotización es lo principal */
+/* Hero: la cotizacion es lo principal */
 .hero{background:var(--navy);color:var(--on-navy);background-image:radial-gradient(900px 520px at 88% -10%,rgba(227,27,45,.22),transparent 62%),radial-gradient(700px 400px at 0% 100%,rgba(201,164,92,.10),transparent 60%)}
 .hero .wrap{display:grid;gap:2.5rem;padding-top:3.5rem;padding-bottom:4.5rem;align-items:start}
 @media(min-width:960px){.hero .wrap{grid-template-columns:1.02fr 1fr;gap:4rem;padding-top:4.5rem;padding-bottom:5.5rem}}
@@ -93,9 +91,7 @@ form .btn{min-height:56px;font-size:1.05rem}
 .logo-card{display:flex;align-items:center;justify-content:center;width:250px;height:104px;padding:1rem 1.4rem;background:#ffffff;border:2px solid var(--edge);border-radius:12px;box-shadow:var(--shadow);flex-shrink:0;transition:transform .2s,border-color .2s}
 .logo-card:hover{transform:translateY(-3px);border-color:var(--gold)}
 .logo-card img{max-width:100%;max-height:66px;object-fit:contain;display:block}
-/* Fondo oscuro para el logo verde pastel de Libesa para que tenga contraste perfecto */
 .logo-card.dark-logo{background:var(--navy);border-color:var(--navy2)}
-/* Logo diseñado para Inversiones Panorámicas */
 .panoramicas-logo{display:flex;align-items:center;gap:.65rem;color:#121621}
 .panoramicas-logo svg{width:42px;height:42px;flex-shrink:0}
 .panoramicas-logo div{display:flex;flex-direction:column;text-align:left;line-height:1.05}
@@ -108,7 +104,7 @@ section.blk{padding:5rem 0}
 .head p{color:var(--muted)}
 .head h2::after{content:"";display:block;width:64px;height:5px;margin-top:1.1rem;background:var(--gold);border-radius:3px}
 
-/* Quiénes Somos y Valores */
+/* Quienes Somos y Valores */
 .about-grid{display:grid;gap:2.5rem;align-items:start}
 @media(min-width:940px){.about-grid{grid-template-columns:1.15fr .85fr;gap:3rem}}
 .about-copy p{font-size:1.08rem;color:var(--muted);margin-bottom:1.6rem}
@@ -167,19 +163,8 @@ footer a:hover{color:var(--on-navy)}
 
 <div class="bar"><div class="wrap">
   <header class="top">
-    <a href="#inicio" class="brand-logo" aria-label="Mava Transportes, inicio">
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
-        <circle cx="32" cy="32" r="27" stroke="#e31b2d" stroke-width="4.5"/>
-        <path d="M7 32h50M32 5c8 8 8 46 0 54M32 5c-8 8-8 46 0 54" stroke="#e31b2d" stroke-width="2.5"/>
-        <path d="M15 39h26V27h-8l-5-6H15v18z" fill="#ffffff"/>
-        <path d="M41 31h7l3 4v4h-10v-8z" fill="#c9a45c"/>
-        <circle cx="22" cy="41" r="4" fill="#121621" stroke="#c9a45c" stroke-width="2.5"/>
-        <circle cx="44" cy="41" r="4" fill="#121621" stroke="#c9a45c" stroke-width="2.5"/>
-      </svg>
-      <div class="brand-text">
-        <strong>MAVA</strong>
-        <span>Transportes</span>
-      </div>
+    <a href="#inicio" class="header-logo" aria-label="Mava Transportes, inicio">
+      <img src="logo-mava.png" alt="Mava Transportes">
     </a>
     <nav aria-label="Principal">
       <a class="hide" href="#quienes-somos">Quiénes somos</a>
@@ -237,14 +222,12 @@ footer a:hover{color:var(--on-navy)}
   </div>
 </section>
 
-<!-- Carrusel continuo de empresas con las que hemos trabajado -->
 <section class="clients" aria-labelledby="cl">
   <div class="wrap">
     <span class="eyebrow" id="cl">Empresas con las que hemos trabajado</span>
   </div>
   <div class="carousel-mask">
     <div class="carousel-track">
-      <!-- Bloque 1 -->
       <div class="logo-card">
         <img src="logo-eit.png" alt="EIT Logistics">
       </div>
@@ -268,7 +251,6 @@ footer a:hover{color:var(--on-navy)}
         <img src="logo-sodimac.png" alt="Sodimac Homecenter">
       </div>
 
-      <!-- Bloque 2 (Duplicado para bucle infinito fluido) -->
       <div class="logo-card" aria-hidden="true">
         <img src="logo-eit.png" alt="">
       </div>
@@ -295,7 +277,6 @@ footer a:hover{color:var(--on-navy)}
   </div>
 </section>
 
-<!-- Sección Quiénes Somos y Nuestros Valores -->
 <section class="blk" id="quienes-somos">
   <div class="wrap">
     <div class="head">
@@ -422,19 +403,8 @@ footer a:hover{color:var(--on-navy)}
 
 <footer>
   <div class="wrap">
-    <a href="#inicio" class="brand-logo" aria-label="Mava Transportes">
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
-        <circle cx="32" cy="32" r="27" stroke="#e31b2d" stroke-width="4.5"/>
-        <path d="M7 32h50M32 5c8 8 8 46 0 54M32 5c-8 8-8 46 0 54" stroke="#e31b2d" stroke-width="2.5"/>
-        <path d="M15 39h26V27h-8l-5-6H15v18z" fill="#ffffff"/>
-        <path d="M41 31h7l3 4v4h-10v-8z" fill="#c9a45c"/>
-        <circle cx="22" cy="41" r="4" fill="#121621" stroke="#c9a45c" stroke-width="2.5"/>
-        <circle cx="44" cy="41" r="4" fill="#121621" stroke="#c9a45c" stroke-width="2.5"/>
-      </svg>
-      <div class="brand-text">
-        <strong>MAVA</strong>
-        <span>Transportes</span>
-      </div>
+    <a href="#inicio" class="footer-logo" aria-label="Mava Transportes">
+      <img src="logo-mava.png" alt="Mava Transportes">
     </a>
     <span>+56 9 8105 5122 · Atención 24 horas<br><a href="mailto:transportesmava@gmail.com">transportesmava@gmail.com</a></span>
     <span>© <span id="y">2026</span> Mava Transportes</span>
